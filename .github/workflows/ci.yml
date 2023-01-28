@@ -40,6 +40,9 @@ jobs:
       - name: Install dependencies 👨🏻‍💻
         run: npm ci --prefer-offline --no-audit
 
+      - name: Run imorph
+        uses: imorphio/vigilant-action@v0.0.1
+
       - name: Run linter 👀
         run: npm run lint
 
